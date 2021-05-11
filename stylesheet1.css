@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Catamaran:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
+}
+
+header{
+    padding-right:10%;
+    padding-left:10%;
+    background-color: transparent;
+    color: white;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: Bree Serif;
+    font-size: 115%;
+}
+
+.nav-and-logo{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    padding: 1%;
+}
+
+nav ul li a:hover{
+    color: #f6a2cf;
+}
+
+div.logo-and-name{
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+    margin: -50px;
+    padding: 0;
+}
+
+div.logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    font-family: Alfa Slab One;
+    font-size: 300%;
+    margin: 0;
+    padding: 0;
+}
+
+div.name{
+    padding:1%;
+    margin-left: 4%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Catamaran;
+    font-size: 110%;
+    font-weight: bold;
+}
+
+div.name p:first-child{
+    margin-bottom: -25px;
+}
+
+div.nav-bar li:nth-child(1){
+    margin-left: 8%;
+    margin-right: 1%;
+}
+
+div.nav-bar li:nth-child(2){
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: 10%;
+    margin-right: 9%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+div.nav-bar li:nth-child(3){
+    margin-right: -500%;
+}
+
+div.perfil-base{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3%;
+}
+
+div.perfil-base p{
+    margin:1%;
+
+}
+
+div.perfil-base p:nth-child(2){
+    margin:-1%;
+}
+
+div.perfil-base p:nth-child(4){
+    margin:0;
+}
+
+div.perfil-base img{
+    height: 5%;
+    width: 25%;
+    border-radius: 150px;
+    margin: 2%;
+    border: 5px solid white;
+}
+
+div.perfil-base p{
+    font-family: Comfortaa;
+    font-size: 110%;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

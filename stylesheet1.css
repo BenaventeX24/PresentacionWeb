@@ -11,16 +11,17 @@ body{
     background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
     margin-left: 5%;
     margin-right: 5%;
+    overflow-x: hidden;
 }
 
-/*----------Cabecera y Barra de navegación--------*/
+/*----------Cabecera, barra de navegación y submenú--------*/
 
 header{
     padding-right:10%;
     padding-left:10%;
     background-color: transparent;
     color: white;
-    border-bottom: 0.5px solid rgb(255, 255, 255);
+
 }
 
 header a {
@@ -36,39 +37,84 @@ header a {
     justify-content:space-between;
 }
 
-nav ul{
+.nav-and-logo li{
+    position: relative;
+}
+
+nav > ul{
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-nav ul li{
+div.nav-bar > li{
+    position: relative;
     display: inline-block;
 }
 
-nav ul li a{
+nav > ul > li > a{
     display: block;
-    padding: 1%;
+    padding: 3%;
 }
 
-nav ul li a:hover{
-    color: #f6a2cf;
+div.nav-bar li > a:hover{
+    color: #10273e;
 }
 
-div.nav-bar li:nth-child(2){
+div.nav-bar > li:nth-child(3){
     padding-left: 8%;
     padding-right: 8%;
     margin-left: 10%;
     margin-right: 9%;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 2px solid rgba(255,255,255,0.5);
+    border-right: 2px solid rgba(255,255,255,0.5);
 }
 
-div.nav-bar li:nth-child(3){
-    margin-right: -500%;
+div.nav-bar li:nth-child(4){
+    margin-right: -9999999999%;
 }
 
-/*-------- Fin Cabecera y barra de navegación ------*/
+/*------- Submenú -----------*/
+
+.submenu_contact{
+    display: none;
+    position:absolute;
+    border-right: 1px  solid white;
+    border-bottom: 1px  solid white;
+    border-left: 1px  solid white;
+    background-image: linear-gradient(360deg, rgb(43, 77, 130),rgb(40, 144, 172));
+    list-style: none;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+}
+
+.submenu_contact > li{
+    transition: .3s all ease-in;
+    padding-bottom: 6%;
+    padding-top: 6%;
+    border-bottom: 1px solid white;
+}
+
+.submenu_contact > li:nth-child(4){
+    border: none;
+}
+
+.submenu_contact a{
+    font-size: 120%;
+}
+
+.contact a:hover{
+    color: #10273e;
+}
+
+.nav-bar li:hover li{
+    display: block;
+    transition: .3s all ease-in;
+}
+
+/*-------Fin Submenú ---------*/
+
+/*-------- Fin Cabecera, barra de navegación y Submenú ------*/
 
 /*----------- Logo ---------*/
 
@@ -80,11 +126,10 @@ div.logo-and-name{
     padding: 0;
 }
 
-div.logo{
+span.logo{
     display: flex;
     justify-items: center;
     align-items: center;
-
     font-family: Alfa Slab One;
     font-size: 300%;
     margin: 0;
@@ -93,12 +138,13 @@ div.logo{
 
 div.name{
     padding:1%;
-    margin-left: 4%;
+    margin-left: 1%;
     margin-top: 0;
     margin-bottom: 0;
     font-family: Catamaran;
     font-size: 110%;
     font-weight: bold;
+    
 }
 
 div.name p:first-child{
@@ -112,8 +158,8 @@ div.name p:first-child{
 div.perfil-completo{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-top: 3%;
+    transition: all 1s;
 }
 
 div.perfil{
@@ -125,7 +171,7 @@ div.perfil{
 }
 
 div.perfil img{
-    width: 40%;
+    width: 50%;
     border-radius: 150px;
     border: 5px solid white;
 }

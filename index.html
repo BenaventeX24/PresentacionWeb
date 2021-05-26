@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet1.css">
     <title>Página presentación</title>
+    <script src="https://kit.fontawesome.com/e8fbd55e60.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="nav-and-logo">
             <div class="logo-and-name">
-                <div class="logo">
-                    <p>MB</p>
-                </div>
+                <span class="logo"><p>MB</p></span>
                     <div class="name">
                         <p>Matías</p>
                         <p>Benavente</p>
                     </div>
             </div>
-            <nav>
-                <ul>
-                    <div class="nav-bar">
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Documentación</a></li>
-                    </div>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <div class="nav-bar"><!--Por problemas de selección tuve que crear este div que cumple la misma función que el nav-->   
+                    <li><a href="#">Contacto</a></li>
+                        
+                            <ul class="submenu_contact">
+                                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                                <li><a href="mailto:benaventematias04@gmail.com"><i class="fas fa-envelope"></i> Correo</a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                            </ul>
+                       
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Documentación</a></li>
+                </div>
+            </ul>
+        </nav>
         </div>
     </header>
         <div class="perfil-completo">

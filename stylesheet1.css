@@ -8,7 +8,7 @@ body{
     padding: 0;
     margin: 0;
     color: white;
-    background-image: linear-gradient(90deg, rgb(43, 77, 130),rgb(40, 144, 172));
+    background-image: linear-gradient(90deg, #294b63,#4dadd7, #294b63);
     margin-left: 5%;
     margin-right: 5%;
     overflow-x: hidden;
@@ -19,22 +19,28 @@ body{
 header{
     padding-right:10%;
     padding-left:10%;
+    margin-top:0;
+    margin-bottom: 0;
     background-color: transparent;
     color: white;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-family: Bree Serif;
+    font-size: 115%;
 
 }
 
 header a {
     text-decoration: none;
     color: white;
-    font-family: Bree Serif;
-    font-size: 115%;
 }
 
 .nav-and-logo{
     display: flex;
     align-items:center;
     justify-content:space-between;
+    margin-bottom: 0;
 }
 
 .nav-and-logo li{
@@ -47,72 +53,99 @@ nav > ul{
     margin: 0;
 }
 
-div.nav-bar > li{
+.nav-bar > li{
     position: relative;
     display: inline-block;
 }
 
 nav > ul > li > a{
-    display: block;
-    padding: 3%;
+    padding-top:0;
+    background-image: linear-gradient(white, white);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
 }
 
-div.nav-bar li > a:hover{
-    color: #10273e;
+.nav-bar li > a:hover{
+    background-size: 100% 2px;
+    transition: .4s;
 }
 
-div.nav-bar > li:nth-child(3){
-    padding-left: 8%;
-    padding-right: 8%;
+.nav-bar > li:nth-child(2){
     margin-left: 10%;
     margin-right: 9%;
-    border-left: 2px solid rgba(255,255,255,0.5);
-    border-right: 2px solid rgba(255,255,255,0.5);
 }
 
-div.nav-bar li:nth-child(4){
+.nav-bar > li:nth-child(3){
     margin-right: -9999999999%;
 }
 
-/*------- Submenú -----------*/
+.nav-bar li ul{
+    position: absolute;
+}
+
+#contact{
+    white-space: nowrap;
+}
+/*------- Submenú Contacto-----------*/
 
 .submenu_contact{
     display: none;
+    transition: width .5s linear 0s;
+    white-space: nowrap;
     position:absolute;
+    top: 3.1em;
+    left: -1.5em;
     border-right: 1px  solid white;
     border-bottom: 1px  solid white;
     border-left: 1px  solid white;
     background-image: linear-gradient(360deg, rgb(43, 77, 130),rgb(40, 144, 172));
     list-style: none;
-    padding-left: 0.3%;
-    padding-right: 0.3%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .submenu_contact > li{
-    transition: .3s all ease-in;
-    padding-bottom: 6%;
-    padding-top: 6%;
+    transition: all .5s linear 0s;
     border-bottom: 1px solid white;
+    padding-bottom: 5%;
 }
 
-.submenu_contact > li:nth-child(4){
+.submenu_contact > li:last-child{
     border: none;
 }
 
 .submenu_contact a{
-    font-size: 120%;
+    font-size: 110%;
 }
 
-.contact a:hover{
-    color: #10273e;
+/*-------Fin Submenú Contacto---------*/
+
+/*------- Submenú Documentación-----------*/
+
+.submenu_documentation{
+    display: none;
+    white-space: nowrap;
+    position:absolute;
+    top: 3.1em;
+    border-right: 1px  solid white;
+    border-bottom: 1px  solid white;
+    border-left: 1px  solid white;
+    background-image: linear-gradient(360deg, rgb(43, 77, 130),rgb(40, 144, 172));
+    list-style: none;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.nav-bar li:hover li{
-    display: block;
-    transition: .3s all ease-in;
+.submenu_documentation > li{
+    padding-bottom: 5%;
 }
 
-/*-------Fin Submenú ---------*/
+.submenu_documentation a{
+    font-size: 110%;
+}
+
+/*-------Fin Submenú Contacto---------*/
 
 /*-------- Fin Cabecera, barra de navegación y Submenú ------*/
 
@@ -157,22 +190,19 @@ div.name p:first-child{
 
 div.perfil-completo{
     display: flex;
-    align-items: center;
     margin-top: 3%;
-    transition: all 1s;
 }
 
 div.perfil{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 6%;
     order: 2;
 }
 
 div.perfil img{
-    width: 50%;
-    border-radius: 150px;
+    width: 30%;
+    border-radius: 150px 150px;
     border: 5px solid white;
 }
 
@@ -183,16 +213,15 @@ div.perfil p:nth-child(2), div.perfil p:nth-child(3){
 }
 
 div.perfil p:nth-child(2){
-    margin-bottom: -5%;
+    margin-bottom: -1em;
 }
 
 div.perfil p:nth-child(3){
-    margin-bottom: -1%;
+    margin-bottom: -0.5em;
 }
 
 div.perfil p:nth-child(4), div.perfil p:nth-child(5), div.perfil p:nth-child(6){
-    margin-bottom: -2%;
-    font-weight:900;
+    margin-bottom: -0.8em;
 }
 
 /*------ Fin Perfil ------ */
@@ -200,15 +229,18 @@ div.perfil p:nth-child(4), div.perfil p:nth-child(5), div.perfil p:nth-child(6){
 /*------ Lista tecnologías ------*/
 
 div.lista-tecno{
+    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     order: 3;
     font-size: 120%;
+    margin-right: 4%;
 }
 
 div.lista-tecno ul li{
+
     list-style:square;
     font-size: 120%;
 }
@@ -227,14 +259,15 @@ div.biografia{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex-shrink: 1.5;
     order: 1;
+    margin-left: 4%;
 }
 
 div.biografia h2{
     font-family: Merriweather Sans;
     color: #10273e;
-    margin-bottom: -1%;
+    margin-bottom: 1%;
 }
 
 /*------ Fin Info Personal -----*/
@@ -251,12 +284,26 @@ div.perfil-completo p{
 /*------ Fin Todo el perfil (lista de tecnologías, info personal y perfil) ------*/
 
 
+/*Easter Egg*/
+#easterEgg{
+    opacity: 0;
+}
 
+#easterEgg:hover{
+    cursor:help;
+}
+/*Easter Egg*/
 
+@media (max-width:800px)  {
+    div.perfil-completo{
+        flex-direction: column;
+    }
 
-
-
-
+    .perfil{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
 
 
 

@@ -4,63 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8fbd55e60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="stylesheet1.css">
     <title>Página presentación</title>
-    <script src="https://kit.fontawesome.com/e8fbd55e60.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./Recursos/Captura.PNG">
 </head>
 <body>
     <header>
+        <!--Logo-->
         <div class="nav-and-logo">
             <div class="logo-and-name">
                 <span class="logo"><p>MB</p></span>
-                    <div class="name">
-                        <p>Matías</p>
-                        <p>Benavente</p>
-                    </div>
-            </div>
-        <nav>
-            <ul>
-                <div class="nav-bar"><!--Por problemas de selección tuve que crear este div que cumple la misma función que el nav-->   
-                    <li><a href="#">Contacto</a></li>
-                        
-                            <ul class="submenu_contact">
-                                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                                <li><a href="mailto:benaventematias04@gmail.com"><i class="fas fa-envelope"></i> Correo</a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
-                            </ul>
-                       
-                    <li><a href="#">Info</a></li>
-                    <li><a href="#">Documentación</a></li>
+                <div class="name">
+                    <p>Matías</p>
+                    <p>Benavente</p>
                 </div>
+            </div>
+        <!--Navigation bar-->
+        <nav>
+            <ul class="nav-bar"> <!--Por problemas de selección, cree esta clase nav-bar en el ul-->
+                <li><a href="#" id="contact">Contacto <i id="flechita1" class="fas fa-angle-down"></i></a>
+                    <ul class="submenu_contact">
+                        <li><a href="https://www.instagram.com/mb_nm.29/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/matiasnicolas.benaventemontero/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://twitter.com/Matas89028000" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="mailto:benaventematias04@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Correo</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=59892032189" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#" id="documentation">Documentación <i id="flechita2" class="fas fa-angle-down"></i></a>
+                    <ul class="submenu_documentation">
+                        <li><a href="https://drive.google.com/drive/folders/1kz7FxySPMubSNSvWsBXq1DkwXgWQkQfa?usp=sharing" target="_blank"><i class="fas fa-certificate"></i> Diplomas</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         </div>
+
     </header>
+
         <div class="perfil-completo">
+
             <div class="perfil">
-                <img src="Recursos/234359.jpg">
+                <img src="Recursos/perfil.jpeg">
                 <p>Matías Nicolás</p>
                 <p>Benavente Montero</p>
                 <p>16 años</p>
                 <p>-Estudiante 5to TIC</p>
                 <p>-Programador Backend</p>
             </div>
+
             <div class="lista-tecno">
                 <h2>Manejo de teconologías:</h2>
-                    <ul>
-                        <li>Java</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
+                <ul>
+                    <li>Java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
             </div>
+
             <div class="biografia">
                 <h2>Biografía:</h2>
                 <p>Nacido en Uruguay, Montevideo (2004) Matías Benavente es un joven programador y diseñador web muy comprometido a su carrera. Como ha contado en diversas entrevistas, la tecnología ha sido su interés principal desde que tiene memoria.</p>
             </div>
+
         </div>
 
-    
+        <button id="easterEgg" onclick="easterEgg()">XD</button>
+
+        <script src="scriptsheet.js"></script>
 </body>
 </html>
